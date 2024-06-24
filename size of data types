@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int x;
+    float f;
+    char c;
+    double d;
+    printf("\nthe size of integer is %ld",sizeof(x));
+    printf("\nthe size of the float is %ld",sizeof(f));
+    printf("\nthe size of the character is %ld",sizeof(c));
+    printf("\nthe size of the double is %ld",sizeof(d));
+    return 0;
+}
