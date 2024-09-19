@@ -1,0 +1,22 @@
+if(p>=150)
+    {
+        printf("enter the marks in four subjects");
+        scanf("%d%d%d%d",&s1,&s2,&s3,&s4);
+        avg=(s1+s2+s3+s4)/4;
+        if(s1<0 || s1>100)
+        {
+            printf("invalid input");
+        }
+        if(s1>=40 &&s2>=40&&s3>=40&&s4>=40 &&avg>=50)
+        {
+            printf("student qualified prilims and mains");
+        }
+        printf(" the total marks in prilims are %d",p);
+        printf(" avg marks in mains are %d",avg);
+    }
+    else
+    {
+        printf("student failed in prilims also");
+    }
+    return 0;
+}
