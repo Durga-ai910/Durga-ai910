@@ -1,8 +1,8 @@
 #include<stdio.h>
 int main()
 {
-    int num,s,c,flag,mid;
-    printf("enter the no of the elements in the array");
+    int num,s,flag,mid,temp;
+    printf("enter the no of elements");
     scanf("%d",&num);
     int a[num];
     printf("enter the elements into array");
@@ -10,25 +10,20 @@ int main()
     {
         scanf("%d",&a[i]);
     }
-    //for sorting the arrray
+    // sorting the array
     for(int i=0;i<num;i++)
     {
         for(int j=i+1;j<num;j++)
         {
             if(a[i]>a[j])
             {
-                c=a[i];
+                temp=a[i];
                 a[i]=a[j];
-                a[j]=c;
+                a[j]=temp;
             }
         }
     }
-    printf("sorted array is");
-    for(int i=0;i<num;i++)
-    {
-        printf("%d\n",a[i]);
-    }
-    printf("enter the element to be seached");
+    printf("enter the element to be searched");
     scanf("%d",&s);
     int high=num;
     int low=1;
@@ -53,11 +48,11 @@ int main()
     }while(s!=mid&&low<=high);
     if(flag==1)
     {
-        printf("search succesful \n");
+        printf("search succesful");
     }
     else
     {
-        printf("element not found");
+        printf("search is not succesful");
     }
     return 0;
 }
