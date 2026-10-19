@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+int r,c;
+printf("enter the numbers of rows");
+scanf("%d",&r);
+printf("enter the no of columns");
+scanf("%d",&c);
+int a[r][c];
+printf("enter the elements into the array");
+for(int i=0;i<r;i++)
+    {
+        for(int j=0;j<c;j++)
+        {
+            scanf("%d",&a[i]);
+        }
+    }
+int sum;
+for(int i=0;i<r;i++)
+{
+    for(int j=0;j<c;j++)
+    {
+        sum+=a[i][j];
+    }
+}
+printf("the sum of all elements in 2D array is %d",sum);
+return 0;
+}
